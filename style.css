@@ -54,13 +54,17 @@ section {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
 }
 
 .navbar {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
+}
+
+.navbar a {
+    color: var(--text-color);
 }
 
 .navbar a:hover,
@@ -120,6 +124,11 @@ span {
     font-size: 1.6rem;
 }
 
+.home-content p a {
+    font-size: 1.6rem;
+    color:var(--main-color)
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -146,7 +155,6 @@ span {
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
@@ -155,7 +163,7 @@ span {
 }
 
 .btn:hover {
-    box-shadow: none;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .about {
@@ -477,6 +485,22 @@ span {
         grid-template-columns: repeat(2, 1fr);
     }
 
+}
+
+.blog {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.blog.blog-draft {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
 }
 
 @media (max-width: 617px) {
